@@ -12,6 +12,7 @@ public class getSingleuser {
 
         given().log().all()
                 .when().get("/api/users/2")
-                .then().log().all().assertThat().statusCode(200);
+                .then().log().all().assertThat()
+                .statusCode(200);
     }
 }
