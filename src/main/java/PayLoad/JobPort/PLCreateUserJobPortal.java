@@ -47,4 +47,27 @@ public class PLCreateUserJobPortal {
                 "\t]\n" +
                 "}" ;
     }
+
+    public static String getCreateJobPayLoad2(String jobTitle,String JobDescription,String[] technologies)
+    {
+
+        String allTechnologies = "";
+        for (int i=0;i<technologies.length;i++) {
+            if (i!=technologies.length-1)
+              allTechnologies = allTechnologies + technologies[i]+ "\",\"";
+            else
+                allTechnologies = "\""+allTechnologies + technologies[i]+"\"";
+        }
+
+        return "{\n" +
+                "\t\"experience\": [\n" +
+                "\t\t\"2 years in manual testing\",\n" +
+                "\t\t\"1 year in automation Testing\"\n" +
+                "\t],\n" +
+                "\t\"jobDescription\": \""+JobDescription+"\",\n" +
+                "\t\"jobId\": 12,\n" +
+                "\t\"jobTitle\": \""+jobTitle+"\",\n" +
+                "\t\"project\": ["+allTechnologies+"]\n" +
+                "}" ;
+    }
 }
