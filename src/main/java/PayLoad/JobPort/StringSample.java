@@ -17,6 +17,5 @@ public class StringSample {
         }
 
         System.out.println(allTechnologies);
-        System.out.println(str);
     }
 }
