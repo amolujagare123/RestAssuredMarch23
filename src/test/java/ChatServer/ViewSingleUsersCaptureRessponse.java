@@ -13,7 +13,7 @@ public class ViewSingleUsersCaptureRessponse {
     @Test
     public void viewALlUsers()
     {
-        RestAssured.baseURI = "http://chat.cookingwithamol.in/index.php/site_admin/";
+        RestAssured.baseURI = "http://localhost:80/chat/lhc_web/index.php/site_admin/";
 
         String response = given().log().all()
                 .auth().preemptive().basic("admin", "admin123")
