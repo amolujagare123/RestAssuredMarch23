@@ -1,4 +1,4 @@
-package SampleRestRequests;
+package SampleRestRequests.basicOperation;
 
 import io.restassured.RestAssured;
 

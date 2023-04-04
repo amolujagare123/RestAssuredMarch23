@@ -19,7 +19,7 @@ public class ViewSingleUsersCaptureRessponse {
                 .auth().preemptive().basic("admin", "admin123")
                 .contentType("application/json")
                 .accept("application/json")
-                .when().get("/restapi/user/291")
+                .when().get("/restapi/user/225")
                 .then().statusCode(200).extract().asString();
 
         System.out.println(response);
